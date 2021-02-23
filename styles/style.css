@@ -10,7 +10,7 @@
 
 body {
     background-color: #f6f6f6;
-    margin-top: 15%;
+    margin-top: 110px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -22,6 +22,7 @@ body {
 }
 
 nav {
+    height: 70px;
     padding: 10px;
     font-size: 18px;
     display: flex;
@@ -36,7 +37,7 @@ nav {
 }
 
 nav > div{
-    padding: 10px;
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,30 +46,83 @@ nav > div{
 nav div.right a{
     text-decoration: none;
     color: black;
-    padding: 10px;
+    /* padding:0 20px 0; */
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: 0.3s ease-out;
+    
 }
 
 div.left {font-size: 125%;    font-family: 'Indie Flower', cursive;}
 
 nav div.right a:hover{
     transition: 0.3s ease-out;
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 20px;
-    padding-right: 20px;
+    /* font-size: 20px; */
+    /* font-weight: bold; */
+    /* padding-left: 10px; 
+    padding-right: 10px; */
+    /* padding: 10px; */
     color: rgb(56, 9, 103);
     border-bottom: 4px solid #161d6f;
+    /* border-top: 4px solid #161d6f; */
 }
 
 nav ul{
     list-style-type: none;
+    /* padding: 5px; */
 }
+
 
 nav div.right ul{
     display: flex;
     list-style-type: none;
 }
 /* ----------------------------- Nav Bar Styling: End ---------------------------- */
+
+@media(max-width: 600px)
+{
+    nav {
+        height: 70px;
+        padding: 10px;
+        font-size: 18px;
+        display: flex;
+        position: fixed;
+        overflow: hidden;
+        top: 0;
+        width: 100%;
+        background: #98ded9;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+        font-weight: 500;
+    }
+
+    nav div.right a{
+        font-size: 70%;
+        text-decoration: none;
+        color: black;
+        /* padding:0 20px 0; */
+        margin-right: 6px;
+        margin-left: 6px;
+        transition: 0.3s ease-out;
+        
+    }
+    
+    div.left {font-size: 100%;    font-family: 'Indie Flower', cursive;}
+    
+    nav div.right a:hover{
+        transition: 0.3s ease-out;
+        /* font-size: 20px; */
+        /* font-weight: bold; */
+        /* padding-left: 10px; 
+        padding-right: 10px; */
+        /* padding: 10px; */
+        color: rgb(56, 9, 103);
+        border-bottom: 4px solid #161d6f;
+        /* border-top: 4px solid #161d6f; */
+    }
+    
+
+}
 
 
 
